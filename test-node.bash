@@ -36,7 +36,6 @@ else
 fi
 
 run=true
-skip_build=false
 validate=false
 detach=false
 blockscout=false
