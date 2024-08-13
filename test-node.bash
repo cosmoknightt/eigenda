@@ -478,6 +478,7 @@ if $force_init; then
         echo l3owneraddress $l3owneraddress
         docker compose run scripts --l2owner $l3owneraddress  write-l3-chain-config
 
+        EXTRA_L3_DEPLOY_FLAG=""
         if $l3_custom_fee_token; then
             echo == Deploying custom fee token
             nativeTokenAddress=`docker compose run scripts create-erc20 --deployer user_fee_token_deployer --bridgeable $tokenbridge --decimals $l3_custom_fee_token_decimals | tail -n 1 | awk '{ print $NF }'`
