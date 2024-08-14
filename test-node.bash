@@ -2,8 +2,8 @@
 
 set -eu
 
-NITRO_NODE_VERSION=offchainlabs/nitro-node:v3.0.1-cf4b74e-dev
-BLOCKSCOUT_VERSION=offchainlabs/blockscout:v1.0.0-c8db5b1
+NITRO_NODE_VERSION=offchainlabs/nitro-node:v3.1.0-7d1d84c-dev
+BLOCKSCOUT_VERSION=offchainlabs/blockscout:v1.1.0-0e716c8
 
 # This commit matches v2.1.0 release of nitro-contracts, with additional support to set arb owner through upgrade executor
 DEFAULT_NITRO_CONTRACTS_VERSION="99c07a7db2fcce75b751c5a2bd4936e898cda065"
